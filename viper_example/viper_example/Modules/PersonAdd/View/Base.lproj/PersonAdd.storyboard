@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="XXG-Zz-OR0">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Person-->
+        <scene sceneID="ZQ7-Yr-ysl">
+            <objects>
+                <viewController storyboardIdentifier="PersonAddViewController" id="XXG-Zz-OR0" customClass="PersonAddViewController" customModule="viper_example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ONH-sn-Pea"/>
+                        <viewControllerLayoutGuide type="bottom" id="pnM-V4-Rll"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0t3-SG-Y1I">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Firstname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HUd-2K-Z74">
+                                <rect key="frame" x="16" y="80" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Lastname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JH4-TV-gW7">
+                                <rect key="frame" x="16" y="126" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="JH4-TV-gW7" secondAttribute="trailing" constant="16" id="36T-ku-gj9"/>
+                            <constraint firstItem="JH4-TV-gW7" firstAttribute="top" secondItem="HUd-2K-Z74" secondAttribute="bottom" constant="16" id="L1y-yY-ZbJ"/>
+                            <constraint firstItem="HUd-2K-Z74" firstAttribute="top" secondItem="ONH-sn-Pea" secondAttribute="bottom" constant="16" id="SxG-KH-aAR"/>
+                            <constraint firstItem="JH4-TV-gW7" firstAttribute="leading" secondItem="0t3-SG-Y1I" secondAttribute="leading" constant="16" id="TYv-gH-8Sr"/>
+                            <constraint firstItem="HUd-2K-Z74" firstAttribute="leading" secondItem="0t3-SG-Y1I" secondAttribute="leading" constant="16" id="XUf-1d-g0a"/>
+                            <constraint firstAttribute="trailing" secondItem="HUd-2K-Z74" secondAttribute="trailing" constant="16" id="llL-Rf-waU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Person" id="vgU-FJ-cDg">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="fUa-OT-gCI">
+                            <connections>
+                                <action selector="cancelBarButtonTouched:" destination="XXG-Zz-OR0" id="Loq-q8-yF0"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="cg5-1G-nVf">
+                            <connections>
+                                <action selector="saveBarButtonTouched:" destination="XXG-Zz-OR0" id="ddu-sQ-VoG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="firstnameTextField" destination="HUd-2K-Z74" id="pMS-05-gaq"/>
+                        <outlet property="lastnameTextField" destination="JH4-TV-gW7" id="LEx-W0-sM8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eo2-7f-qWj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1924" y="139"/>
+        </scene>
+    </scenes>
+</document>
