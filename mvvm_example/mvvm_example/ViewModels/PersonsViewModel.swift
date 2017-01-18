@@ -6,7 +6,7 @@
 //  Copyright © 2017 Oliver Mastny. All rights reserved.
 //
 
-protocol PersonsViewModelProtocol {
+private protocol PersonsViewModelProtocol {
     func fetchPersons()
     func removePersons()
     func getPersonsCount() -> Int
@@ -18,7 +18,7 @@ class PersonsViewModel: PersonsViewModelProtocol {
     
     static let sharedInstance = PersonsViewModel()
     
-    var persons = [Person]()
+    private var persons = [Person]()
     
     func fetchPersons() {
         if let objects = RealmService.sharedInstance.get(objectType: Person.self), let persons = objects.toArray() as? [Person] {

@@ -7,7 +7,7 @@ The reason for this repository is my master thesis where I investigate every arc
 The following architectures have been investigated: 
 
 * Model-View-Controller (MVC)
-* Model-View-Presenter (MVP) - passive variante
+* Model-View-Presenter (MVP) - passive variant
 * Model-View-ViewModel (MVVM)
 * View-Interpreter-Presenter-Entity-Router (Viper)
 * CleanSwift
