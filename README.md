@@ -17,7 +17,7 @@ The following architectures have been investigated:
 The examples consist of an simple persons app where an user is able to view persons, add a person and remove all persons. The persons will be saved persistent with Realm.
 
 ## Installation
-All projects uses CocoaPods. 
+All projects use CocoaPods. 
 
 Run ``` pod install ``` before launching a project.
 
